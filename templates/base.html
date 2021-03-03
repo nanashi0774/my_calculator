@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+    <head>
+        <title>計算アプリ</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" >
+        <link rel="stylesheet" href="{% static 'css/mycss/index.css'%}" >
+    </head>
+    <body>
+
+        <div>
+            <h1><a href="/mathapp/process">計算アプリ</a></h1>
+        </div>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
