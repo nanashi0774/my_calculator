@@ -2,6 +2,13 @@
 
 {% block content %}
 <h2>電卓</h2>
+{% if messages %}
+	<ul class="messages">
+		{% for message in messages %}
+			<p {% if message.tags %} class="message {{ message.tags }}"{% endif %}>{{ message }}</p>
+		{% endfor %}
+	</ul>
+{% endif %}
 <table border="2">
     <tr>
         <td colspan="4" class="text-white bg-dark result">{{text}}</td>

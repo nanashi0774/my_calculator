@@ -27,3 +27,9 @@ table{
   font-size: 1.4em;
   font-weight: bold;
 }
+
+.message{
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
